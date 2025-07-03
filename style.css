@@ -555,3 +555,95 @@ footer {
     height: 250px;
   }
 }
+/* 📱 MOBILE RESPONSIVENESS FIXES */
+@media (max-width: 768px) {
+  /* Hero section layout */
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 230px;
+    height: 230px;
+    margin-top: 25px;
+  }
+
+  /* Navigation bar adjustment */
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+  }
+
+  .top-nav a,
+  .top-nav button {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  /* Skills grid */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-card {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  /* Contact section */
+  .contact-grid {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* Projects section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .project-card {
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+  }
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
