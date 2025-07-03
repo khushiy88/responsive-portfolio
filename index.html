@@ -5,13 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Khushi Yadav | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
   <!-- Navigation Bar -->
 <nav class="top-nav">
+  <a href="#about" class="scroll-down">⬇️ Scroll Down</a>
+
   <a href="#home">🏠 Home</a>
+  
+
   <a href="#about">💬 About</a>
   <a href="#skills">💡 Skills</a>
+  
+  <a href="#projects">💻 Projects</a>
+
   <a href="#contact">📬 Contact</a>
   <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌓 Toggle</button>
 </nav>
@@ -21,9 +30,19 @@
   
   <section class="hero" id="home">
   <div class="hero-content animated fadeInLeft">
-    <h1>Hi, I'm <span class="highlight">Khushi Yadav</span></h1>
+    <h1>Hi, I'm <span class="highlight">Khushi Yaduvanshi</span></h1>
   
-<p class="tagline">👩‍💻 Web Developer &nbsp; | &nbsp; ✨ Creative Coder &nbsp; | &nbsp; 🤖 AI-ML Explorer</p>
+<p class="tagline">
+  <span class="role dev">👩‍💻 Web Developer</span>
+  <span class="divider">|</span>
+  <span class="role coder">✨ Creative Coder</span>
+  <span class="divider">|</span>
+  <span class="role ai">🤖 AI-ML Explorer</span>
+</p>
+
+
+
+
 
  <div class="about-content">
   <p>🚀 I’m on a journey to turn ideas into meaningful digital experiences.</p>
@@ -80,7 +99,31 @@
     <div class="skill-card ml">Machine Learning Basics</div>
      <div class="skill-card java">Java</div>
   </div>
+  </section>
+<!-- PROJECTS SECTION -->
+<section class="projects-section" id="projects">
+  
+
+  <h2 class="section-title">💻 Projects</h2>
+  <div class="projects-grid">
+    <a href="https://github.com/khushiyadav123/diabetes-prediction" target="_blank" class="project-card">
+      <h3>🩺 Diabetes Prediction</h3>
+      <p>ML-based system to predict the chance of diabetes using health inputs.</p>
+    </a>
+
+    <a href="https://github.com/khushiyadav123/fake-news-detection" target="_blank" class="project-card">
+      <h3>📰 Fake News Detection</h3>
+      <p>Detects whether a news article is fake or real using NLP models.</p>
+    </a>
+
+    <a href="https://khushiy88.github.io/responsive-portfolio/" target="_blank" class="project-card">
+      <h3>🌐 Responsive Portfolio</h3>
+      <p>This live portfolio built using Flexbox + Grid with dark mode toggle.</p>
+    </a>
+  </div>
 </section>
+
+
 
 <!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
@@ -97,26 +140,19 @@
     </div>
   </div>
 </section>
+<footer>
+  <a href="https://linkedin.com/in/khushi..." target="_blank">🔗 LinkedIn</a> |
+  <a href="https://github.com/khushi..." target="_blank">💻 GitHub</a> |
+  <a href="mailto:khushi@email.com">📧 Email</a>
+</footer>
+
 
 <footer>
   &copy; 2025 <strong>Khushi Yadav</strong>. All rights reserved.
 </footer>
 
-  <div class="toggle-theme" onclick="toggleTheme()">
-  🌓 Toggle Theme
-</div>
+  
 
-<script>
-  function toggleTheme() {
-    const isDark = document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  }
-
-  // Load saved theme on page load
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-  }
-</script>
 
 
 
