@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khushi Yadav | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+<nav class="top-nav">
+  <a href="#home">🏠 Home</a>
+  <a href="#about">💬 About</a>
+  <a href="#skills">💡 Skills</a>
+  <a href="#contact">📬 Contact</a>
+  <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌓 Toggle</button>
+</nav>
+
+
+  <!-- HERO SECTION -->
+  
+  <section class="hero" id="home">
+  <div class="hero-content animated fadeInLeft">
+    <h1>Hi, I'm <span class="highlight">Khushi Yadav</span></h1>
+  
+<p class="tagline">👩‍💻 Web Developer &nbsp; | &nbsp; ✨ Creative Coder &nbsp; | &nbsp; 🤖 AI-ML Explorer</p>
+
+ <div class="about-content">
+  <p>🚀 I’m on a journey to turn ideas into meaningful digital experiences.</p>
+  <p>🎯 Passionate about <span class="highlight">clean code</span>, <span class="highlight">stunning UI</span>, and solving real-world problems through <span class="highlight">technology</span>.</p>
+  <p>👩‍💻 As a Computer Science (AI & ML) student, I love combining logic with creativity and enjoy <span class="highlight">learning by building</span>.</p>
+  <p>🔬 Interested in the intersection of <span class="highlight">user-centered design</span>, automation, and <span class="highlight">machine learning</span>. I value code that is <span class="highlight">elegant</span>, <span class="highlight">reusable</span>, and <span class="highlight">efficient</span>.</p>
+  <p>🌱 In my free time, I explore tech trends, tutorials, or experiment with new ideas. I'm <span class="highlight">curious, driven, and always growing</span>.</p>
+</div>
+
+
+    <div class="hero-buttons">
+      
+      <a href="#skills" class="btn gradient-btn">💡 My Skills</a>
+      <a href="#contact" class="btn gradient-btn">📬 Contact</a>
+    </div>
+  </div>
+  <div class="hero-image-wrapper animated fadeInRight">
+  <img src="khushi.jpg" alt="Khushi Yadav" class="hero-img">
+</div>
+
+
+</section>
+   <!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <p>
+      I'm <strong>Khushi Yadav</strong>, a <span class="highlight">Computer Science (AI & ML)</span> student with a strong passion for developing elegant, responsive, and intuitive web applications.
+    </p>
+    <p>
+      I believe in <em>learning by doing</em> — from building small components to complete solutions. My curiosity fuels my learning, and my creativity drives my designs.
+    </p>
+  </div>
+
+<!-- Motivational Quotes -->
+<div class="inspiring-quotes animated-quotes">
+  <q>“I’m not afraid to start small. I’m afraid of staying there.”</q>
+  <br /><br />
+  <q>“Every project is a step forward — not to perfection, but to progress.”</q>
+</div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills-section" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card html">HTML5</div>
+    <div class="skill-card css">CSS3</div>
+    <div class="skill-card js">JavaScript</div>
+    <div class="skill-card python">Python</div>
+    <div class="skill-card cpp">C++</div>
+    <div class="skill-card git">Git & GitHub</div>
+    <div class="skill-card responsive">Responsive Design</div>
+    <div class="skill-card ml">Machine Learning Basics</div>
+     <div class="skill-card java">Java</div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      📧 <strong>Email:</strong> <a href="mailto:khushiyadav88400@gmail.com">khushiyadav88400@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/khushi-yadav-ab9776299" target="_blank">linkedin.com/in/khushi-yadav</a>
+    </div>
+    <div class="contact-item">
+      💻 <strong>GitHub:</strong> <a href="https://github.com/khushiyadav123" target="_blank">github.com/khushiyadav123</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 <strong>Khushi Yadav</strong>. All rights reserved.
+</footer>
+
+  <div class="toggle-theme" onclick="toggleTheme()">
+  🌓 Toggle Theme
+</div>
+
+<script>
+  function toggleTheme() {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+
+  // Load saved theme on page load
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
